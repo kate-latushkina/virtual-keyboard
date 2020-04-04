@@ -81,6 +81,16 @@ textArea.onkeydown = function (element) {
     }
   }
 
+  // Tab
+  if (code == 'Tab') {
+    element.preventDefault();
+    textArea.value += '    ';
+  }
+
+  // Alt
+  if (code == 'AltLeft' || code == 'AltRight') {
+    element.preventDefault();
+  }
   //  ShiftLeft AND ShiftRight
   if (code == 'ShiftLeft' || code == 'ShiftRight') {
     for (let i = 0; i < keyButton.length; i++) {
