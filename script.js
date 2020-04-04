@@ -24,6 +24,7 @@ arrayLetters.forEach(key => {
   const keyButton = document.createElement('button');
   keyButton.classList.add(key['width']);
   keyButton.classList.add(key['code']);
+  keyButton.classList.add(key['type']);
   keyButton.innerHTML = key['text']['ru'];
   let lastKeyInLine = key['code'];
   if (lastKeyInLine == 'Backquote' || lastKeyInLine == 'Tab' || lastKeyInLine == 'CapsLock' || lastKeyInLine == 'ShiftLeft' || lastKeyInLine == 'ControlLeft') {
@@ -33,7 +34,7 @@ arrayLetters.forEach(key => {
     line.appendChild(keyButton);
   } else {
     line.appendChild(keyButton);
-  } 
+  }
 });
 
 const capsLock = document.querySelector('.CapsLock');
@@ -56,30 +57,31 @@ textArea.onkeyup = function (element) {
 
 // click button
 textArea.onkeydown = function (element) {
-  let code = element.code
+  let code = element.code;
   const keyButton = document.querySelectorAll('button');
   if (code == 'CapsLock') {
     if (capsLock.classList.contains('button-active')) {
-      for (let i = 0; i < keyButton.length; i++) {
-        keyButton[i].innerHTML = keyButton[i].outerText.toLowerCase();
-      }
       capsLock.classList.remove('button-active');
+      for (let i = 0; i < keyButton.length; i++) {
+        if (keyButton[i].textContent = arrayLetters[i]['shiftText']['ru']) {
+          keyButton[i].innerHTML = arrayLetters[i]['text']['ru'];
+        }
+      }
     }
     else {
       for (let i = 0; i < keyButton.length; i++) {
         capsLock.classList.add('button-active');
-        keyButton[i].innerHTML = keyButton[i].outerText.toUpperCase();
+        if (keyButton[i].textContent == arrayLetters[i]['text']['ru']) {
+          keyButton[i].innerHTML = arrayLetters[i]['shiftText']['ru'];
+        }
       }
     }
   }
-
   else {
-    arrayLetters.forEach(key => { 
-      if (code == key['code']) {
-        const keyButtonCode = document.querySelector(`.${key['code']}`);
-        keyButtonCode.classList.add('button-active');
-      }
-    })
+    if (code == element['code']) {
+      const keyButtonCode = document.querySelector(`.${element['code']}`);
+      keyButtonCode.classList.add('button-active');
+    }
   }
 }
 
