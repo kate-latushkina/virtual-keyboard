@@ -16,7 +16,7 @@ const arrayLetters = [
     {
         text: { en: '2', ru: '2' },
         width: 'small',
-        shiftText: { en: '@', ru: '""' },
+        shiftText: { en: '@', ru: '"' },
         type: 'alternative',
         code: 'Digit2'
     },
