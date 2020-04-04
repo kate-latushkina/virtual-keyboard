@@ -24,7 +24,6 @@ arrayLetters.forEach(key => {
   const keyButton = document.createElement('button');
   keyButton.classList.add(key['width']);
   keyButton.classList.add(key['code']);
-  keyButton.classList.add(key['type']);
   keyButton.innerHTML = key['text']['ru'];
   let lastKeyInLine = key['code'];
   if (lastKeyInLine == 'Backquote' || lastKeyInLine == 'Tab' || lastKeyInLine == 'CapsLock' || lastKeyInLine == 'ShiftLeft' || lastKeyInLine == 'ControlLeft') {
@@ -38,12 +37,19 @@ arrayLetters.forEach(key => {
 });
 
 const capsLock = document.querySelector('.CapsLock');
-
+const keyButton = document.querySelectorAll('button');
 
 // not click button
 textArea.onkeyup = function (element) {
   let code = element.code;
   arrayLetters.forEach(key => {
+    if (code == 'ShiftLeft' || code == 'ShiftRight') {
+      for (let i = 0; i < keyButton.length; i++) {
+        if (keyButton[i].textContent = arrayLetters[i]['shiftText']['ru']) {
+          keyButton[i].innerHTML = arrayLetters[i]['text']['ru'];
+        }
+      }
+    }
     if (code != 'CapsLock') {
       const keyButtonCode = document.querySelector(`.${key['code']}`);
       if (code == key['code']) {
@@ -58,30 +64,40 @@ textArea.onkeyup = function (element) {
 // click button
 textArea.onkeydown = function (element) {
   let code = element.code;
-  const keyButton = document.querySelectorAll('button');
+
+  // CapsLock
   if (code == 'CapsLock') {
     if (capsLock.classList.contains('button-active')) {
       capsLock.classList.remove('button-active');
       for (let i = 0; i < keyButton.length; i++) {
-        if (keyButton[i].textContent = arrayLetters[i]['shiftText']['ru']) {
-          keyButton[i].innerHTML = arrayLetters[i]['text']['ru'];
-        }
+        keyButton[i].innerHTML = arrayLetters[i]['text']['ru'];
       }
     }
     else {
+      capsLock.classList.add('button-active');
       for (let i = 0; i < keyButton.length; i++) {
-        capsLock.classList.add('button-active');
-        if (keyButton[i].textContent == arrayLetters[i]['text']['ru']) {
-          keyButton[i].innerHTML = arrayLetters[i]['shiftText']['ru'];
-        }
+        keyButton[i].innerHTML = arrayLetters[i]['shiftText']['ru'];
       }
     }
   }
-  else {
-    if (code == element['code']) {
-      const keyButtonCode = document.querySelector(`.${element['code']}`);
-      keyButtonCode.classList.add('button-active');
+
+  //  ShiftLeft AND ShiftRight
+  if (code == 'ShiftLeft' || code == 'ShiftRight') {
+    for (let i = 0; i < keyButton.length; i++) {
+      if (code == 'ShiftLeft') {
+        document.querySelector('.ShiftLeft').classList.add('button-active');
+      }
+      if (code == 'ShiftRight') {
+        document.querySelector('.ShiftRight').classList.add('button-active');
+      }
+      keyButton[i].innerHTML = arrayLetters[i]['shiftText']['ru'];
     }
+  }
+
+  // another buttons 
+  if (code != 'CapsLock') {
+    const keyButtonCode = document.querySelector(`.${element['code']}`);
+    keyButtonCode.classList.add('button-active');
   }
 }
 
