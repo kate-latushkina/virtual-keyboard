@@ -107,70 +107,70 @@ const arrayLetters = [
     {
         text: { en: 'q', ru: 'й' },
         width: 'small',
-        shiftText: { en: 'q', ru: 'Й' },
+        shiftText: { en: 'Q', ru: 'Й' },
         type: 'word',
         code: 'KeyQ'
     },
     {
         text: { en: 'w', ru: 'ц' },
         width: 'small',
-        shiftText: { en: 'w', ru: 'Ц' },
+        shiftText: { en: 'W', ru: 'Ц' },
         type: 'word',
         code: 'KeyW'
     },
     {
         text: { en: 'e', ru: 'у' },
         width: 'small',
-        shiftText: { en: 'e', ru: 'У' },
+        shiftText: { en: 'E', ru: 'У' },
         type: 'word',
         code: 'KeyE'
     },
     {
         text: { en: 'r', ru: 'к' },
         width: 'small',
-        shiftText: { en: 'r', ru: 'К' },
+        shiftText: { en: 'R', ru: 'К' },
         type: 'word',
         code: 'KeyR'
     },
     {
         text: { en: 't', ru: 'е' },
         width: 'small',
-        shiftText: { en: 't', ru: 'Е' },
+        shiftText: { en: 'T', ru: 'Е' },
         type: 'word',
         code: 'KeyT'
     },
     {
         text: { en: 'y', ru: 'н' },
         width: 'small',
-        shiftText: { en: 'y', ru: 'Н' },
+        shiftText: { en: 'Y', ru: 'Н' },
         type: 'word',
         code: 'KeyY'
     },
     {
         text: { en: 'u', ru: 'г' },
         width: 'small',
-        shiftText: { en: 'u', ru: 'Г' },
+        shiftText: { en: 'U', ru: 'Г' },
         type: 'word',
         code: 'KeyU'
     },
     {
         text: { en: 'i', ru: 'ш' },
         width: 'small',
-        shiftText: { en: 'i', ru: 'Ш' },
+        shiftText: { en: 'I', ru: 'Ш' },
         type: 'word',
         code: 'KeyI'
     },
     {
         text: { en: 'o', ru: 'щ' },
         width: 'small',
-        shiftText: { en: 'o', ru: 'Щ' },
+        shiftText: { en: 'O', ru: 'Щ' },
         type: 'word',
         code: 'KeyO'
     },
     {
         text: { en: 'p', ru: 'з' },
         width: 'small',
-        shiftText: { en: 'p', ru: 'З' },
+        shiftText: { en: 'P', ru: 'З' },
         type: 'word',
         code: 'KeyP'
     },
@@ -212,63 +212,63 @@ const arrayLetters = [
     {
         text: { en: 'a', ru: 'ф' },
         width: 'small',
-        shiftText: { en: 'a', ru: 'Ф' },
+        shiftText: { en: 'A', ru: 'Ф' },
         type: 'word',
         code: 'KeyA'
     },
     {
         text: { en: 's', ru: 'ы' },
         width: 'small',
-        shiftText: { en: 's', ru: 'Ы' },
+        shiftText: { en: 'S', ru: 'Ы' },
         type: 'word',
         code: 'KeyS'
     },
     {
         text: { en: 'd', ru: 'в' },
         width: 'small',
-        shiftText: { en: 'd', ru: 'В' },
+        shiftText: { en: 'D', ru: 'В' },
         type: 'word',
         code: 'KeyD'
     },
     {
         text: { en: 'f', ru: 'а' },
         width: 'small',
-        shiftText: { en: 'f', ru: 'А' },
+        shiftText: { en: 'F', ru: 'А' },
         type: 'word',
         code: 'KeyF'
     },
     {
         text: { en: 'g', ru: 'п' },
         width: 'small',
-        shiftText: { en: 'g', ru: 'П' },
+        shiftText: { en: 'G', ru: 'П' },
         type: 'word',
         code: 'KeyG'
     },
     {
         text: { en: 'h', ru: 'р' },
         width: 'small',
-        shiftText: { en: 'h', ru: 'Р' },
+        shiftText: { en: 'H', ru: 'Р' },
         type: 'word',
         code: 'KeyH'
     },
     {
         text: { en: 'j', ru: 'о' },
         width: 'small',
-        shiftText: { en: 'j', ru: 'О' },
+        shiftText: { en: 'J', ru: 'О' },
         type: 'word',
         code: 'KeyJ'
     },
     {
         text: { en: 'k', ru: 'л' },
         width: 'small',
-        shiftText: { en: 'l', ru: 'Л' },
+        shiftText: { en: 'K', ru: 'Л' },
         type: 'word',
         code: 'KeyK'
     },
     {
         text: { en: 'l', ru: 'д' },
         width: 'small',
-        shiftText: { en: 'l', ru: 'Д' },
+        shiftText: { en: 'L', ru: 'Д' },
         type: 'word',
         code: 'KeyL'
     },
@@ -303,49 +303,49 @@ const arrayLetters = [
     {
         text: { en: 'z', ru: 'я' },
         width: 'small',
-        shiftText: { en: 'z', ru: 'Я' },
+        shiftText: { en: 'Z', ru: 'Я' },
         type: 'word',
         code: 'KeyZ'
     },
     {
         text: { en: 'x', ru: 'ч' },
         width: 'small',
-        shiftText: { en: 'x', ru: 'Ч' },
+        shiftText: { en: 'X', ru: 'Ч' },
         type: 'word',
         code: 'KeyX'
     },
     {
         text: { en: 'c', ru: 'с' },
         width: 'small',
-        shiftText: { en: 'c', ru: 'С' },
+        shiftText: { en: 'C', ru: 'С' },
         type: 'word',
         code: 'KeyC'
     },
     {
         text: { en: 'v', ru: 'м' },
         width: 'small',
-        shiftText: { en: 'v', ru: 'М' },
+        shiftText: { en: 'V', ru: 'М' },
         type: 'word',
         code: 'KeyV'
     },
     {
         text: { en: 'b', ru: 'и' },
         width: 'small',
-        shiftText: { en: 'b', ru: 'И' },
+        shiftText: { en: 'B', ru: 'И' },
         type: 'word',
         code: 'KeyB'
     },
     {
         text: { en: 'n', ru: 'т' },
         width: 'small',
-        shiftText: { en: 'n', ru: 'Т' },
+        shiftText: { en: 'N', ru: 'Т' },
         type: 'word',
         code: 'KeyN'
     },
     {
         text: { en: 'm', ru: 'ь' },
         width: 'small',
-        shiftText: { en: 'm', ru: 'Ь' },
+        shiftText: { en: 'M', ru: 'Ь' },
         type: 'word',
         code: 'KeyM'
     },
