@@ -71,7 +71,7 @@ textArea.addEventListener('keyup', function (element) {
       }
     }
     if (code != 'CapsLock') {
-      const keyButtonCode = document.querySelector(`.${key['code']}`);
+      let keyButtonCode = document.querySelector(`.${key['code']}`);
       if (code == key['code']) {
         keyButtonCode.classList.remove('button-active')
       }
@@ -134,8 +134,8 @@ textArea.addEventListener('keydown', function (element) {
 
   // another buttons 
   if (code != 'CapsLock') {
-    const keyButtonCode = document.querySelector(`.${element['code']}`);
-    keyButtonCode.classList.add('button-active');
+    const elemButtonCode = document.querySelector(`.${code}`);
+    elemButtonCode.classList.add('button-active');
   }
 })
 
