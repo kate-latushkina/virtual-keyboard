@@ -10,84 +10,84 @@ const arrayLetters = [
         text: { en: '1', ru: '1' },
         width: 'small',
         shiftText: { en: '!', ru: '!' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Digit1'
     },
     {
         text: { en: '2', ru: '2' },
         width: 'small',
         shiftText: { en: '@', ru: '"' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Digit2'
     },
     {
         text: { en: '3', ru: '3' },
         width: 'small',
         shiftText: { en: '#', ru: '№' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Digit3'
     },
     {
         text: { en: '4', ru: '4' },
         width: 'small',
         shiftText: { en: '$', ru: ';' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Digit4'
     },
     {
         text: { en: '5', ru: '5' },
         width: 'small',
         shiftText: { en: '%', ru: '%' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Digit5'
     },
     {
         text: { en: '6', ru: '6' },
         width: 'small',
         shiftText: { en: '^', ru: ':' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Digit6'
     },
     {
         text: { en: '7', ru: '7' },
         width: 'small',
         shiftText: { en: '&', ru: '?' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Digit7'
     },
     {
         text: { en: '8', ru: '8' },
         width: 'small',
         shiftText: { en: '*', ru: '*' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Digit8'
     },
     {
         text: { en: '9', ru: '9' },
         width: 'small',
         shiftText: { en: '(', ru: '(' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Digit9'
     },
     {
         text: { en: '0', ru: '0' },
         width: 'small',
         shiftText: { en: ')', ru: ')' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Digit0'
     },
     {
         text: { en: '-', ru: '-' },
         width: 'small',
         shiftText: { en: '_', ru: '_' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Minus'
     },
     {
         text: { en: '=', ru: '=' },
         width: 'small',
         shiftText: { en: '+', ru: '+' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Equal'
     },
     {
@@ -192,11 +192,11 @@ const arrayLetters = [
         text: { en: '\\', ru: '\\' },
         width: 'small',
         shiftText: { en: '|', ru: '/' },
-        type: 'alternative',
+        type: 'symbol',
         code: 'Backslash'
     },
     {
-        text: { en: 'DEL', ru: 'DEL' },
+        text: { en: 'Del', ru: 'Del' },
         width: 'medium',
         shiftText: { en: 'DEL', ru: 'DEL' },
         type: 'functional',
@@ -392,9 +392,9 @@ const arrayLetters = [
         code: 'ControlLeft',
     },
     {
-        text: { en: 'Win', ru: 'Win' },
+        text: { en: 'En/Ru', ru: 'En/Ru' },
         width: 'medium',
-        shiftText: { en: 'Win', ru: 'Win' },
+        shiftText: { en: 'En/Ru', ru: 'En/Ru' },
         type: 'functional',
         code: 'OSLeft',
     },
