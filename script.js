@@ -135,7 +135,9 @@ textArea.addEventListener('keydown', function (element) {
   // another buttons 
   if (code != 'CapsLock') {
     const elemButtonCode = document.querySelector(`.${code}`);
-    elemButtonCode.classList.add('button-active');
+    if (elemButtonCode != null) {
+      elemButtonCode.classList.add('button-active'); 
+    }
   }
 })
 
