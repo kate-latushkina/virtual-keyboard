@@ -1,3 +1,3 @@
 # virtual-keyboard
 
-https://kate-latushkina.github.io/virtual-keyboard/index.html
+https://unruffled-varahamihira-ca07f1.netlify.com/
