@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+.container {
+    width: 910px;
+    height: 650px;
+    margin: auto;
+}
+.text-container {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 20px;
+    height: 200px;
+    resize: none;
+    font-size: 20px;
+    overflow: auto;
+}
+
+.keyboard {
+    margin-top: 50px;
+    width: 100%;
+    height: 340px;
+    padding: 10px 15px;
+    background-color: rgba(119, 136, 153, 0.5);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+.small,
+.medium,
+.large,
+.x-large 
+ {
+    position: relative;
+    width: 6%;
+    max-width: 50px;
+    height: 50px;
+    margin: 3px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    user-select: none;
+    transition: border-radius 0.2s, background-color 0.3s;
+}
+.small {
+    font-weight: normal;
+    color: darkblue;
+    background-color: lightgrey;
+}
+
+.medium {
+    width: 7%;
+    max-width: 70px;
+}
+.large {
+    width: 12%;
+    max-width: 105px;
+}
+.x-large {
+    width: 40%;
+    max-width: 350px;
+}
+.line {
+    width: 100%;
+    height: 18%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.line:first-child {
+    margin-top: 0;
+}
+
+.button-active {
+    background-color: lightseagreen;
+    border-radius: 30px 10px;
+}
+.text {
+    text-align: center;
+    margin-top: 20px;
+}
